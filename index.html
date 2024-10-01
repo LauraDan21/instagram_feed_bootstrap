@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram_photo_feed</title>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Logo" width="100" height="" class="d-inline-block align-text-top img-fluid"></a>
+            <div class="navbar-nav">
+                <button type="button" class="btn btn-success mx-2 my-sm-0" data-toggle="modal" data-target="#miModal">Create a new post</button>
+                <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="miModalLabel">Create a new post</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <form class="mx-3 mb-4 mt-2" >
+                                <div class="mb-3">
+                                    <h6 class="col-form-label modal-subtitle">Caption:</h6>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                    <button type="button" class="btn btn-light border mr-1">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light border">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                            </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class="nav nav-pills my-4 justify-content-center" id="pills-tab" role="tablist">
+            <a class="nav-item nav-link active bg-light text-dark mr-1" id="pills-stacked-tab" data-toggle="pill" href="#pills-stacked" role="tab" aria-controls="pills-stacked" aria-selected="true">
+                <i class="fas fa-th"></i>
+            </a>
+            <a class="nav-item nav-link bg-light text-dark" id="pills-displayed-tab" data-toggle="pill" href="#pills-displayed" role="tab" aria-controls="pills-displayed" aria-selected="false">
+                <i class="fas fa-square"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Tab content wrapper -->
+        <div class="tab-content">
+            <!-- Content of "pills-stacked" -->
+            <div class="tab-pane fade show active" id="pills-stacked" role="tabpanel" aria-labelledby="pills-stacked-tab">
+                <div class="card-group">
+                    <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/237/400/200" class="card-img" alt="...">
+                    </div>
+                    <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/256/400/200" class="card-img" alt="...">
+                    </div>
+                    <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/291/400/200" class="card-img" alt="...">
+                    </div>
+                    <div class="card-group">
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/217/400/200" class="card-img" alt="...">
+                        </div>
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/247/400/200" class="card-img" alt="...">
+                        </div>
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/288/400/200" class="card-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/239/400/200" class="card-img" alt="...">
+                        </div>
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/255/400/200" class="card-img" alt="...">
+                        </div>
+                        <div class="card card m-2 border-0">
+                        <img src="https://picsum.photos/id/290/400/200" class="card-img" alt="...">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Content of "pills-displayed" -->
+            <div class="tab-pane fade" id="pills-displayed" role="tabpanel" aria-labelledby="pills-displayed-tab">
+                <div class="container-fluid bg-light" style="width: 600px;">
+                    <div class="row justify-content-between p-3">
+                        <h5 class="float-start">Very lonely!</h5>
+                        <h6 class="float-end">08/26</h6>
+                    </div>
+                    <div class="mt-0"><img src="https://picsum.photos/id/220/400/300" width="100%"></div>
+                    <div class="mb-3">
+                        <p class="">204 likes</p>
+                        <p>It's a good environment to not leave home.</p>
+                    </div>
+                </div>
+                <div class="container-fluid bg-light" style="width: 600px;">
+                    <div class="row justify-content-between p-3">
+                        <h5 class="float-start">Nice view!</h5>
+                        <h6 class="float-end">01/12</h6>
+                    </div>
+                    <div class="mt-0"><img src="https://picsum.photos/id/244/400/300" width="100%"></div>
+                    <div class="mb-3">
+                        <p class="fw-bold">1k likes</p>
+                        <p>This is a very good place and climate to go on a trip 😎</p>
+                    </div>
+                </div>
+                <div class="container-fluid bg-light" style="width: 600px;">
+                    <div class="row justify-content-between p-3">
+                        <h5 class="float-start">The beach is beautiful</h5>
+                        <h6 class="float-end">02/10</h6>
+                    </div>
+                    <div class="mt-0"><img src="https://picsum.photos/id/215/400/300" width="100%"></div>
+                    <div class="mb-3">
+                        <p class="fw-bold">255 likes</p>
+                        <p>A trip to the beach is one of the most beautiful things one should do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
